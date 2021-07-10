@@ -3,18 +3,20 @@ import { CommonModule } from '@angular/common';
 
 import { GeneralRoutingModule } from './general-routing.module';
 import { HomeComponent } from './home/home.component';
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 @NgModule({
   declarations: [
-    HomeComponent
+    HomeComponent,
+    PageNotFoundComponent
   ],
   imports: [
-    CommonModule,
-    GeneralRoutingModule
+    CommonModule
   ],
   exports: [
-    HomeComponent
+    HomeComponent,
+    PageNotFoundComponent
   ]
 })
 export class GeneralModule { }
