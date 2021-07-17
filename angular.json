@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "PCcomponentsApp": {
+    "Frontend-components-app": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:application": {
@@ -17,7 +17,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/PCcomponentsApp",
+            "outputPath": "dist/Frontend-components-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -71,10 +71,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "PCcomponentsApp:build:production"
+              "browserTarget": "Frontend-components-app:build:production"
             },
             "development": {
-              "browserTarget": "PCcomponentsApp:build:development"
+              "browserTarget": "Frontend-components-app:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -82,7 +82,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "PCcomponentsApp:build"
+            "browserTarget": "Frontend-components-app:build"
           }
         },
         "test": {
@@ -105,5 +105,5 @@
       }
     }
   },
-  "defaultProject": "PCcomponentsApp"
+  "defaultProject": "Frontend-components-app"
 }
