@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { GeneralRoutingModule } from './general/general-routing.module';
-import { ProductRoutingModule } from './product/product-routing.module';
+import { GeneralRoutingModule } from './modules/general/general-routing.module';
+import { ProductRoutingModule } from './modules/product/product-routing.module';
 
 const routes: Routes = [];
 
