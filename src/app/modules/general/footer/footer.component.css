@@ -1,4 +1,4 @@
-body{
+.body{
   display: flex;
   min-height: 100vh;
   flex-direction: column;
@@ -9,5 +9,10 @@ main{
 }
 
 .page-footer{
-  background: #2E8DF9;
+  /*background: #2E8DF9;*/
+  background: #232F3E;
+  display: flex;
+  min-height: 40vh;
+  flex-direction: column;
 }
+
