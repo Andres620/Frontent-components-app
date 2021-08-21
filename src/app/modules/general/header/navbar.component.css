@@ -12,12 +12,16 @@
     display: flex;
 }
 
-.logo{
+.nav-wrapper__logo{
     width: inherit;
     height: inherit;
     display: inherit;
     align-items: center;
-    padding: 5px;
+    padding: 5px 5px 5px 30px; 
+}
+
+.nav-wrapper__logo-logo{
+    align-items: center;
 }
 
 .menu{
@@ -29,20 +33,22 @@
     display: inherit;
 }
 
-.menu ul{
+.menu__list{
     height: inherit;
     display: inherit;
     align-items: center;
 }
 
-.menu ul li{
+.menu__list-item{
     height: inherit;
     align-items: center;
     display: inherit;
 }
 
-.menu ul li a{
+.menu__list-item a{
     height: inherit;
     align-items: center;
     display: inherit;
 }
+
+

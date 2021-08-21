@@ -2,7 +2,7 @@
     max-height: 250px;
 }
 
-.carousel-item{
+.carousel__item{
     width: inherit;
     height: inherit;
     display: inherit;
@@ -24,7 +24,7 @@
     align-items: center;
 }
 
-.container-cards{
+.home-section__container-cards{
     width: 95%;
     max-width: 1500px;
     justify-content: center;
