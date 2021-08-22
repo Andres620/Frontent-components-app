@@ -17,33 +17,67 @@
     object-fit: cover;
 }
 
-.content{
+.main{
     display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.main__aside{
+    box-sizing: border-box;
+    padding: 40px;
+    margin: 40px 0;
+    background: blue;
+    width: 20%;
+    height: 100vh;
+    position: sticky;
+    top: 0;
+}
+
+.main__home{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    font-family: 'Urbanist', sans-serif;
+}
+
+
+
+.main__home__content{
+    display: block;
     width: 100%;
     padding: 30px 0;
-    text-align: center;
+    text-align: left;
     justify-content: center;
     
 }
 
-.content-h1{
+.main__home__content-h1{
     font-family: 'Urbanist', sans-serif;
     font-weight: bold;
-    padding-left: 40px;
+    text-align: center;
+    padding: 40px;
+}
+
+.main__home__content-h2{
+    font-weight: bold;
+    line-height: 1;
+    margin-bottom: 3px;
+    position: relative;
+    padding: 0 80px;
+}
+
+.main__home__content-p{
+    font-size: 27px;   
+    padding: 5px 80px;
+    margin-top: 10px;
+    
 }
 
 
-
-.home-section{
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    font-family: 'Urbanist', sans-serif;
-}
-
-.home-section__container-cards{
+.main__home__container-cards{
     width: 95%;
     max-width: 1500px;
     justify-content: center;
@@ -55,22 +89,7 @@
     margin: 30px 0;
 }
 
-.home-section__container-cards-content{
-    padding: 0 40px;
-}
-.home-section__container-cards-h2{
-    font-weight: bold;
-    line-height: 1;
-    margin-bottom: 3px;
-    position: relative;
-}
 
-.home-section__container-cards-p{
-    font-size: 27px;   
-    padding: 5px 0px;
-    margin-top: 10px;
-    
-}
 
 .card{
     width: 280px;
@@ -84,16 +103,32 @@
     height: 80%;
 }
 
+
+
 @media only screen and (max-width: 800px){
-    .content-h1{
+    
+    .main{
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+
+    .main__aside{
+        width: 100%;
+    }
+
+    .main__home{
+        width: 100%;
+    }
+
+    .main__home__content-h1{
         font-size: 40px;
     }
 
-    .home-section__container-cards-h2{
+    .main__home__content-h2{
         font-size: 30px;
     }
 
-    .home-section__container-cards-p{
+    .main__home__content-p{
         font-size: 20px;
     }
 }
